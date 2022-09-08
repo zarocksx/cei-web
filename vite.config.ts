@@ -7,11 +7,12 @@ export default defineConfig({
   build: {
     outDir: 'build',
     lib: {
-      entry: 'src/my-element.ts',
+      entry: 'src/index.js',
       formats: ['es'],
     },
     manifest: true,
     rollupOptions: {
+      external: /^lit/,
       input: {
         main: resolve(__dirname, 'index.html'),
       },
