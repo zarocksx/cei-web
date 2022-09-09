@@ -1,4 +1,4 @@
-var index = "html body {\n  background-color: #24263B;\n  margin: 0;\n  padding: 0;\n  overflow-x: clip;\n}\nhtml body cei-header {\n  width: 100vw;\n}\nhtml body #hero {\n  top: 4em;\n  left: 0;\n  height: calc(100vh - 4em);\n  width: 100%;\n  display: flex;\n  pointer-events: none;\n}\nhtml body #hero img {\n  margin: auto;\n  width: 40%;\n}\nhtml body main {\n  height: 100vh;\n  background-color: #24263B;\n}\nhtml body main #cardHolder {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-evenly;\n  align-items: center;\n  margin: 0 12.5vw;\n}\nhtml body main #cardHolder > * {\n  margin: 2.5vh 4.6875vw;\n}";
+var index = "html body {\n  background-color: #24263B;\n  margin: 0;\n  padding: 0;\n  overflow-x: clip;\n}\nhtml body cei-header {\n  width: 100vw;\n}\nhtml body #hero {\n  top: 4em;\n  left: 0;\n  height: calc(100vh - 4em);\n  width: 100%;\n  display: flex;\n  pointer-events: none;\n}\nhtml body #hero img {\n  margin: auto;\n  width: 40%;\n}\n@media (max-width: 390px) {\n  html body #hero img {\n    margin-top: 30%;\n    width: 80%;\n  }\n}\nhtml body main {\n  height: 100vh;\n  background-color: #24263B;\n}\nhtml body main #cardHolder {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: space-evenly;\n  align-items: center;\n  margin: 0 12.5vw;\n}\nhtml body main #cardHolder > * {\n  margin: 2.5vh 4.6875vw;\n}";
 /**
  * @license
  * Copyright (c) 2017 The Polymer Project Authors. All rights reserved.
@@ -1468,7 +1468,7 @@ class LitElement extends UpdatingElement {
 }
 LitElement["finalized"] = true;
 LitElement.render = render;
-var styles$1 = ':host {\n  display: flex;\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  box-shadow: 0px 5px 10px 10px rgba(0, 0, 0, 0.1019607843);\n  background-color: #24263B;\n  height: 4em;\n  flex-direction: row-reverse;\n  align-items: center;\n  justify-content: space-between;\n}\n:host img {\n  background-size: cover;\n  height: calc(100% - 0.75em);\n  margin: 1.25em;\n  filter: saturate(0%);\n}\n:host #link-container {\n  display: flex;\n  flex-wrap: wrap;\n}\n:host a {\n  text-decoration: none;\n  color: whitesmoke;\n  font-size: 1.75em;\n  margin: 0 0.5em;\n  transition: all 0.2s ease;\n  display: block;\n  position: relative;\n  padding: 0.2em 0;\n}\n:host a::after {\n  content: "";\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  width: 100%;\n  height: 0.1em;\n  background-color: #FFD42A;\n  opacity: 0;\n  transition: opacity 300ms, transform 300ms;\n}\n:host a:hover::after, :host a:focus::after {\n  opacity: 1;\n  transform: translate3d(0, 0.2em, 0);\n}\n@media (max-width: 390px) {\n  :host a {\n    font-size: 1em;\n    margin: 0 0.25em;\n  }\n}';
+var styles$1 = ':host {\n  display: flex;\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  box-shadow: 0px 5px 10px 10px rgba(0, 0, 0, 0.1019607843);\n  background-color: #24263B;\n  height: 4em;\n  flex-direction: row-reverse;\n  align-items: center;\n  justify-content: space-between;\n}\n:host img {\n  background-size: cover;\n  height: calc(100% - 0.75em);\n  margin: 1.25em;\n  filter: saturate(0%);\n}\n:host #link-container {\n  display: flex;\n  flex-wrap: wrap;\n  margin-right: 2em;\n}\n:host a {\n  text-decoration: none;\n  color: whitesmoke;\n  font-size: 1.75em;\n  margin: 0 0.5em;\n  transition: all 0.2s ease;\n  display: block;\n  position: relative;\n  padding: 0.2em 0;\n}\n:host a::after {\n  content: "";\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  width: 100%;\n  height: 0.1em;\n  background-color: #FFD42A;\n  opacity: 0;\n  transition: opacity 300ms, transform 300ms;\n}\n:host a:hover::after, :host a:focus::after {\n  opacity: 1;\n  transform: translate3d(0, 0.2em, 0);\n}\n@media (max-width: 390px) {\n  :host a {\n    font-size: 1em;\n    margin: 0 0.25em;\n  }\n}';
 var __defProp$1 = Object.defineProperty;
 var __getOwnPropDesc$1 = Object.getOwnPropertyDescriptor;
 var __decorate$1 = (decorators, target, key, kind) => {
@@ -1506,7 +1506,7 @@ __decorate$1([
 CEIHeader = __decorate$1([
   customElement("cei-header")
 ], CEIHeader);
-var styles = ":host {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-around;\n  width: 10vw;\n  max-width: 10vw;\n}\n:host #top-card {\n  border-radius: 15px 15px 0 0;\n  overflow: hidden;\n  background-color: #4F5384;\n  object-fit: cover;\n  max-height: 10vw;\n}\n:host #top-card img {\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n}\n:host #bottom-card {\n  background-color: #393C5C;\n  border-radius: 0 0 15px 15px;\n  overflow: hidden;\n  height: 10em;\n  padding: 1em;\n  color: whitesmoke;\n}";
+var styles = ":host {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-around;\n  width: 15vw;\n  max-width: 15vw;\n  height: 17vw;\n  color: whitesmoke;\n}\n:host #top-card {\n  border-radius: 15px 15px 0 0;\n  overflow: hidden;\n  background-color: #4F5384;\n  object-fit: cover;\n  height: 11.3333333333vw;\n  max-height: 11.3333333333vw;\n}\n:host #top-card img {\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n}\n:host #bottom-card {\n  background-color: #393C5C;\n  border-radius: 0 0 15px 15px;\n  overflow: hidden;\n  height: 5.6666666667vw;\n  max-height: 5.6666666667vw;\n  padding: 1em;\n  color: whitesmoke;\n}\n:host #bottom-card h1 {\n  font-size: 1.5em;\n  margin: 0;\n}\n:host #bottom-card p {\n  font-size: 1em;\n  margin: 0;\n}";
 var __defProp = Object.defineProperty;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
 var __decorate = (decorators, target, key, kind) => {
@@ -1522,7 +1522,7 @@ let CEICard = class extends LitElement {
   constructor() {
     super(...arguments);
     this.imageUrl = "https://via.placeholder.com/550";
-    this.title = "title";
+    this.title = "Title";
     this.content = "lorem ipsum dolor sit amet consectetur";
   }
   render() {

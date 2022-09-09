@@ -19,6 +19,12 @@ html body #hero img {
   margin: auto;
   width: 40%;
 }
+@media (max-width: 390px) {
+  html body #hero img {
+    margin-top: 30%;
+    width: 80%;
+  }
+}
 html body main {
   height: 100vh;
   background-color: #24263B;
@@ -53,6 +59,7 @@ html body main #cardHolder > * {
 :host #link-container {
   display: flex;
   flex-wrap: wrap;
+  margin-right: 2em;
 }
 :host a {
   text-decoration: none;
@@ -88,15 +95,18 @@ html body main #cardHolder > * {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 10vw;
-  max-width: 10vw;
+  width: 15vw;
+  max-width: 15vw;
+  height: 17vw;
+  color: whitesmoke;
 }
 :host #top-card {
   border-radius: 15px 15px 0 0;
   overflow: hidden;
   background-color: #4F5384;
   object-fit: cover;
-  max-height: 10vw;
+  height: 11.3333333333vw;
+  max-height: 11.3333333333vw;
 }
 :host #top-card img {
   width: 100%;
@@ -107,7 +117,16 @@ html body main #cardHolder > * {
   background-color: #393C5C;
   border-radius: 0 0 15px 15px;
   overflow: hidden;
-  height: 10em;
+  height: 5.6666666667vw;
+  max-height: 5.6666666667vw;
   padding: 1em;
   color: whitesmoke;
+}
+:host #bottom-card h1 {
+  font-size: 1.5em;
+  margin: 0;
+}
+:host #bottom-card p {
+  font-size: 1em;
+  margin: 0;
 }
