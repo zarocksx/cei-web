@@ -2,9 +2,8 @@
 import './style/index.scss'
 
 //import all lit components
-export * from './components/CEIHeader/CEIHeader.ts';
-
-
+export * from './components/CEIHeader/';
+export * from './components/CEICard';
 
 // index logic
 

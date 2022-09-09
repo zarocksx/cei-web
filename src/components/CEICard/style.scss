@@ -1,0 +1,30 @@
+@import '../../style/variables.scss';
+
+:host {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: $card-width;
+    max-width: $card-width;
+    #top-card {
+        border-radius: 15px 15px 0 0;
+        overflow: hidden;
+        background-color:$foreground-light;
+        object-fit: cover;
+        max-height: $card-width;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    #bottom-card {
+        background-color: $background-light;
+        border-radius: 0 0 15px 15px;
+        overflow: hidden;
+        height: 10em;
+        padding: 1em;
+        color: $text-color;
+    }
+}
