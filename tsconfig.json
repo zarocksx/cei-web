@@ -17,6 +17,6 @@
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["src/**/*.ts", "src/index.js"],
+  "include": ["src/**/*.ts", "src/index.ts"],
   "exclude": []
 }
