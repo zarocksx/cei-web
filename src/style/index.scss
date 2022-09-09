@@ -32,7 +32,6 @@ html {
         }
     
         main {
-            height: 100vh;
             background-color: $background-dark;
 
             #cardHolder {
@@ -46,6 +45,12 @@ html {
                     $percent-per-card: calc($parent-size / $amount-of-card-per-row);
                     $percent-by-side: calc( $percent-per-card / 4);
                     margin: 2.5vh $percent-by-side; // calcul pour définir le nombre d'élements par ligne
+                }
+
+                @media (max-width : 390px) {
+                    &>*{
+                        margin: 2.5vh 25%;
+                    }
                 }
             }
         }

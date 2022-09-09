@@ -3,6 +3,7 @@ import './style/index.scss';
 
 //import all lit components
 export * from './components/CEIHeader';
+export * from './components/CEIFooter'
 export * from './components/CEICard';
 
 // index logic
