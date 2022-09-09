@@ -22,6 +22,13 @@ html {
                 margin: auto;
                 width: 40%;
             }
+
+            @media (max-width : 390px) {
+                img {
+                    margin-top: 30%;
+                    width: 80%;
+                }
+            }
         }
     
         main {

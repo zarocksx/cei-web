@@ -10,7 +10,7 @@ export class CEICard extends LitElement {
   imageUrl: string = 'https://via.placeholder.com/550'; // valeur par défaut
 
   @property({type: String})
-  title: string = 'title' // valeur par défaut
+  title: string = 'Title' // valeur par défaut
 
   @property({type: String})
   content: string = 'lorem ipsum dolor sit amet consectetur' // valeur par défaut
