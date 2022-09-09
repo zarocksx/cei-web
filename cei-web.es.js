@@ -1597,10 +1597,10 @@ header.links = [
   },
   {
     label: "Historique",
-    urlLink: "./pages/historique.html"
+    urlLink: "./src/pages/historique.html"
   },
   {
     label: "Photos",
-    urlLink: "./pages/photos.html"
+    urlLink: "./src/pages/photos.html"
   }
 ];
