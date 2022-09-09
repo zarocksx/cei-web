@@ -1493,7 +1493,7 @@ let CEIHeader = class extends LitElement {
         `)}
       </div>
       <img
-        src="./src/assets/svg/favicon.svg"
+        src="../../assets/svg/favicon.svg"
         alt="logo du CEI"
       />
     `;
