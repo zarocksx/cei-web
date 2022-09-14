@@ -7,7 +7,7 @@ export default defineConfig({
   base: '/cei-web/',
   build: {
     outDir: 'build',
-    minify: false,
+    minify: true,
     lib: {
       entry: 'src/index.ts',
       formats: ['es'],
