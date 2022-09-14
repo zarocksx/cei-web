@@ -4,7 +4,7 @@ import { resolve } from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/cei-web/',
+  base: './',
   build: {
     outDir: 'build',
     minify: true,
