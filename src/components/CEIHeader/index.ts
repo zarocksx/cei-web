@@ -21,7 +21,7 @@ export class CEIHeader extends LitElement {
         `)}
       </div>
       <img
-        src="../../assets/svg/favicon.svg"
+        src="src/assets/svg/favicon.svg"
         alt="logo du CEI"
       />
     `
