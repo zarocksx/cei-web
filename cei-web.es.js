@@ -175,7 +175,7 @@ found at http://polymer.github.io/PATENTS.txt
         `))}
       </div>
       <img
-        src="src/assets/svg/favicon.svg"
+        src="../../assets/svg/favicon.svg"
         alt="logo du CEI"
       />
     `}};rt.styles=Z(':host {\n  display: flex;\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  box-shadow: 0px 5px 10px 10px rgba(0, 0, 0, 0.1019607843);\n  background-color: #24263B;\n  height: 4em;\n  flex-direction: row-reverse;\n  align-items: center;\n  justify-content: space-between;\n}\n:host img {\n  background-size: cover;\n  height: calc(100% - 0.75em);\n  margin: 1.25em;\n  filter: saturate(0%);\n}\n:host #link-container {\n  display: flex;\n  flex-wrap: wrap;\n  margin-right: 2em;\n}\n:host a {\n  text-decoration: none;\n  color: whitesmoke;\n  font-size: 1.75em;\n  margin: 0 0.5em;\n  transition: all 0.2s ease;\n  display: block;\n  position: relative;\n  padding: 0.2em 0;\n}\n:host a::after {\n  content: "";\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  width: 100%;\n  height: 0.1em;\n  background-color: #FFD42A;\n  opacity: 0;\n  transition: opacity 300ms, transform 300ms;\n}\n:host a:hover::after, :host a:focus::after {\n  opacity: 1;\n  transform: translate3d(0, 0.2em, 0);\n}\n@media (max-width: 390px) {\n  :host a {\n    font-size: 1em;\n    margin: 0 0.25em;\n  }\n}'),it([G({type:Array})],rt.prototype,"links",2),rt=it([J("cei-header")],rt);var ot=Object.defineProperty,at=Object.getOwnPropertyDescriptor;let lt=class extends et{render(){return $`
