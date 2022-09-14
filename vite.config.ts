@@ -4,7 +4,7 @@ import { resolve } from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/cei-web/',
+  base: 'https://github.com/zarocksx/cei-web/',
   build: {
     outDir: 'build',
     minify: false,
