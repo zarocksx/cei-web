@@ -1,4 +1,4 @@
-# Implémentation du site web static du CEI [![CI](https://github.com/zarocksx/cei-web/actions/workflows/ci.yml/badge.svg)](https://github.com/zarocksx/cei-web/actions/workflows/ci.yml)
+# Implémentation du site web static du CEI [![CI](https://github.com/rodydavis/vite-lit-element-starter/actions/workflows/ci.yml/badge.svg)](https://github.com/zarocksx/cei-web/actions/workflows/ci.yml)
 
 La stack est la suivante:
 
