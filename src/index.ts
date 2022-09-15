@@ -19,10 +19,10 @@ header.links = [
   },
   {
     label: 'Historique',
-    urlLink: './src/pages/historique.html',
+    urlLink: '/src/pages/historique.html',
   },
   {
     label: 'Photos',
-    urlLink: './src/pages/photos.html',
+    urlLink: '/src/pages/photos.html',
   },
 ];
