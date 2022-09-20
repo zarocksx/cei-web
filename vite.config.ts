@@ -4,7 +4,7 @@ import { resolve } from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: './',
+  base: './', // https://vitejs.dev/guide/static-deploy.html#github-pages
   build: {
     outDir: 'build',
     minify: true,
