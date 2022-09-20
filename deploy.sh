@@ -7,20 +7,20 @@
 npm run build
 
 # navigate into the build output directory
-cd dist
+cd build
 
 # if you are deploying to a custom domain
 echo 'cei.com' > CNAME
 
-git init
-git checkout -b main
+git checkout -b deploy
 git add -A
 git commit -m 'deploy'
 
 # if you are deploying to https://<USERNAME>.github.io
-# git push git@github.com:zarocksx/cei-web.github.io.git main
-
+git push -f https://github.com/zarocksx/cei-web.git deploy
+git checkout -b main
+read
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:zarocksx/cei-web.git main:gh-pages
+# git push -f git@github.com:<USERNAME>/<REPO>.git main:gh-pages
 
 cd -
