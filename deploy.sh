@@ -1,7 +1,9 @@
 #!/usr/bin/env sh
 
 # abort on errors
-# set -e
+set -e
+
+git checkout deploy
 
 # build
 npm run build
@@ -10,17 +12,14 @@ npm run build
 cd dist
 
 # if you are deploying to a custom domain
-echo 'cei.com' > CNAME
+echo 'cei.brussels' > CNAME
 
-git init
-git checkout -b main
 git add -A
 git commit -m 'deploy'
 
 # if you are deploying to https://<USERNAME>.github.io
-# git push git@github.com:zarocksx/cei-web.github.io.git main
+git push https://github.com/zarocksx/cei-web.git deploy
 
-# if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:zarocksx/cei-web.git main:gh-pages
+git checkout main
 
 cd -
