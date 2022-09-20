@@ -12,7 +12,7 @@ npm run build
 cd build
 
 # if you are deploying to a custom domain
-echo 'cei.com' > CNAME
+echo 'cei.brussels' > CNAME
 
 git add -A
 git commit -m 'deploy'
