@@ -1,5 +1,10 @@
 # Implémentation du site web static du CEI [![CI](https://github.com/rodydavis/vite-lit-element-starter/actions/workflows/ci.yml/badge.svg)](https://github.com/zarocksx/cei-web/actions/workflows/ci.yml)
 
+Une stack full frontend a été décidé afin de faire des économies et de garder un site stable, il existe de nombreux hébergement de site statique gratuit, nous avons fait le choix de l'héberger chez Github qui propose via github-page de servir directement une app static via leurs infrastructures.
+( limité a 1GB d'espace disque, 100GB de bande passante par mois, 10 builds par heure )
+
+Dans la partie Projects vous trouverez un board reprennant les idées et développemments en cours pour le site web
+
 La stack est la suivante:
 
 ## lit-element & typescript
@@ -30,3 +35,5 @@ Create a production build:
 Serve the build directory:
 
 `npm run serve`
+
+Pour toute question, demandez à Caputain.
