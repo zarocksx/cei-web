@@ -5,8 +5,6 @@ set -e
 
 git checkout deploy
 
-git checkout -b deploy
-
 # build
 npm run build
 
