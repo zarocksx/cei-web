@@ -15,7 +15,8 @@
       svg{ 
         background-size: cover;
         height: calc(100% - 0.75em);
-        margin: 1.25em;
+        width: auto;
+        margin: auto 1.25em;
         filter: saturate(0%);
       }
 

@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+# avant de lancer ce script faites un merge de main sur la branch deploy
+
 # abort on errors
 set -e
 
