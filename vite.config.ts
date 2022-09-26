@@ -16,6 +16,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
+        historique: resolve(__dirname, 'src/pages/historique.html'),
+        photos: resolve(__dirname, 'src/pages/photos.html')
       },
     },
   },

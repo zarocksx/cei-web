@@ -10,6 +10,8 @@ export type link = {
 export class CEIHeader extends LitElement {
   static styles = unsafeCSS(styles); // load le scss
 
+
+  // le svg a été ajouté en dur ici par pur feignéantise.
   svg = svg`
   <svg width="670" height="687" viewBox="0 0 670 600" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <rect width="670" height="687" fill="url(#pattern0)"/>
