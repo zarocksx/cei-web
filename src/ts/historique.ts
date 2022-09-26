@@ -1,4 +1,3 @@
-import { CEIHeader } from '../components/CEIHeader';
 import '../style/historique.scss';
 
 //import all lit components
