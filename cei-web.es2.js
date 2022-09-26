@@ -1,1 +1,1 @@
-import"./index.js";console.log("historique");
+import"./index2.js";

@@ -4,7 +4,8 @@
     "src": "index.html",
     "isEntry": true,
     "imports": [
-      "_index.js"
+      "_index.js",
+      "_index2.js"
     ]
   },
   "src/pages/historique.html": {
@@ -12,7 +13,7 @@
     "src": "src/pages/historique.html",
     "isEntry": true,
     "imports": [
-      "_index.js"
+      "_index2.js"
     ]
   },
   "src/pages/photos.html": {
@@ -25,5 +26,8 @@
   },
   "_index.js": {
     "file": "index.js"
+  },
+  "_index2.js": {
+    "file": "index2.js"
   }
 }
