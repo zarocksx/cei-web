@@ -8,6 +8,7 @@ $text-color: whitesmoke;
 $drop-shadow: 0px 5px 10px 10px #0000001a;
 
 $header-height: 4em;
+$footer-height: $header-height;
 
 $card-width: 15vw;
 $card-height: 17vw;
@@ -16,3 +17,19 @@ $mobile-card-width: 50vw;
 $mobile-card-height: 50vw;
 
 $amount-of-card-per-row: 4;
+
+
+
+// timeline
+$background-timeline: #252827;
+$color-dim: #6c6d6d;
+$spacing: 50px;
+$radius: 4px;
+
+$date: 120px;
+$dotborder: 4px;
+$dot: 11px;
+$line: 4px;
+
+$font-title: 'Saira', sans-serif;
+$font-text: 'Chivo', sans-serif;
