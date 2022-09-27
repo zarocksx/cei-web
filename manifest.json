@@ -4,8 +4,7 @@
     "src": "index.html",
     "isEntry": true,
     "imports": [
-      "_index.js",
-      "_index2.js"
+      "_index.js"
     ]
   },
   "src/pages/historique.html": {
@@ -13,7 +12,8 @@
     "src": "src/pages/historique.html",
     "isEntry": true,
     "imports": [
-      "_index2.js"
+      "_historique.js",
+      "_index.js"
     ]
   },
   "src/pages/photos.html": {
@@ -21,13 +21,14 @@
     "src": "src/pages/photos.html",
     "isEntry": true,
     "imports": [
+      "_historique.js",
       "_index.js"
     ]
   },
   "_index.js": {
     "file": "index.js"
   },
-  "_index2.js": {
-    "file": "index2.js"
+  "_historique.js": {
+    "file": "historique.js"
   }
 }

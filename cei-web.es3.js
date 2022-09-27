@@ -1,1 +1,1 @@
-import"./index.js";console.log("photos");
+import"./historique.js";import"./index.js";document.querySelector("#header").links=[{label:"Acceuil",urlLink:"../../index.html"},{label:"Historique",urlLink:"./historique.html"},{label:"Photos",urlLink:"./photos.html"}];
