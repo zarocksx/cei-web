@@ -1,4 +1,3 @@
-import { CEIHeader } from './components/CEIHeader';
 import './style/index.scss';
 
 //import all lit components
@@ -6,10 +5,8 @@ export * from './components/CEIHeader';
 export * from './components/CEIFooter'
 export * from './components/CEICard';
 
-// index logic
-
 // DOM Query
-var header = document.querySelector('#header') as CEIHeader;
+var header = document.querySelector('#header') as any;
 
 // Filling components with
 header.links = [
