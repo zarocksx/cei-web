@@ -1,4 +1,3 @@
-import { CEIHeader } from './components/CEIHeader';
 import './style/index.scss';
 
 //import all lit components
@@ -6,10 +5,8 @@ export * from './components/CEIHeader';
 export * from './components/CEIFooter'
 export * from './components/CEICard';
 
-// index logic
-
 // DOM Query
-var header = document.querySelector('#header') as CEIHeader;
+var header = document.querySelector('#header') as any;
 
 // Filling components with
 header.links = [
@@ -19,10 +16,10 @@ header.links = [
   },
   {
     label: 'Historique',
-    urlLink: '/src/pages/historique.html',
+    urlLink: './src/pages/historique.html',
   },
   {
     label: 'Photos',
-    urlLink: '/src/pages/photos.html',
+    urlLink: './src/pages/photos.html',
   },
 ];

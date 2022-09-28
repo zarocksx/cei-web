@@ -8,7 +8,7 @@ export class CEIFooter extends LitElement {
     render() {
         return html`
             <div id='social-container'>
-                <a href='https://discord.gg/rtXA4dn9'>
+                <a href='https://discord.gg/TfKaGp75SW'>
                     <img 
                         src='https://assets-global.website-files.com/6257adef93867e50d84d30e2/62595384f934b806f37f4956_145dc557845548a36a82337912ca3ac5.svg'
                         alt='discord'

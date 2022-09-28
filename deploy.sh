@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+# avant de lancer ce script faites un merge de main sur la branch deploy
+
 # abort on errors
 set -e
 
@@ -9,7 +11,7 @@ git checkout deploy
 npm run build
 
 # navigate into the build output directory
-cd dist
+cd build
 
 # if you are deploying to a custom domain
 echo 'cei.brussels' > CNAME

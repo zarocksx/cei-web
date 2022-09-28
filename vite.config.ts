@@ -4,7 +4,7 @@ import { resolve } from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: './', // https://vitejs.dev/guide/static-deploy.html#github-pages
+  base: '/', // https://vitejs.dev/guide/static-deploy.html#github-pages
   build: {
     outDir: 'build',
     minify: true,
@@ -16,6 +16,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
+        historique: resolve(__dirname, 'src/pages/historique.html'),
+        photos: resolve(__dirname, 'src/pages/photos.html')
       },
     },
   },
