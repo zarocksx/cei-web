@@ -91,7 +91,7 @@ export class CEIMember extends LitElement {
         ${this.items.map(
           ({ m_job, m_name }) => html`
             <article>
-              <img src='src/assets/pictures/${m_name}.jpg' />
+              <img src='src/assets/pictures/${m_name}.jpg' onerror="this.src='https://via.placeholder.com/550'" />
               <div class='info'>
                 <h3>${m_name}</h3>
                 <p>${m_job}</p>

@@ -58,10 +58,11 @@
         }
 
         .info {
-            border: 2px solid rgb(255, 212, 42);
+            border: 2px solid $selection;
+            background-color: $background-light;
             border-radius: 15px;
             height: 8em;
-            padding: 1em;
+            padding:0 1em;
         }
       }
   }
