@@ -4,6 +4,7 @@ import './style/index.scss';
 export * from './components/CEIHeader';
 export * from './components/CEIFooter'
 export * from './components/CEICard';
+export * from './components/CEIMember';
 
 // DOM Query
 var header = document.querySelector('#header') as any;

@@ -1,1 +1,69 @@
-:host {}
+@import '../../style/index.scss';
+
+:host {
+    --item-margin: 10px;
+    --item-offset: 0px;
+    --item-width: 300px;
+
+    display: flex;
+    flex-direction: row;
+    font: $font-text;
+    color: $text-color;
+  }
+
+  .btn-next,
+  .btn-prev {
+    background: none;
+    border: 0;
+    color: $selection;
+    cursor: pointer;
+    font-size: 36px;
+    outline: none;
+  }
+
+  .hidden {
+    visibility: hidden;
+  }
+
+  #member {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+    height: 500px;
+
+    &::after {
+        background: linear-gradient(to right, $background-dark 0%,transparent 3%,transparent 97%,$background-dark 100%);
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+      }
+
+      article {
+        box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.15);
+        box-sizing: border-box;
+        flex-shrink: 0;
+        margin: var(--item-margin);
+        padding: 10px;
+        /* width + left and right margins */
+        transform: translateX(calc(-1 * var(--item-offset)));
+        transition: transform 300ms;
+        width: var(--item-width);
+
+        img {
+            width:100%;
+            margin: auto;
+            border-radius: 100%;
+        }
+
+        .info {
+            border: 2px solid rgb(255, 212, 42);
+            border-radius: 15px;
+            height: 8em;
+            padding: 1em;
+        }
+      }
+  }
+
+  
