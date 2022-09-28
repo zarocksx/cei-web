@@ -1,60 +1,76 @@
 @import './variables.scss';
 html {
-    body {
-        background-color: $background-dark;
-        margin: 0;
-        padding: 0;
-        overflow-x: clip;
-    
-        cei-header {
-            width: 100vw;
-            position: sticky;
-            top: 0;
-        }
-    
-        #hero {
-            top: $header-height;
-            left: 0;
-            height: calc(100vh - $header-height);
-            width: 100%;
-            display: flex;
-            pointer-events:none;
-    
-            img {
-                margin: auto;
-                width: 40%;
-            }
+  body {
+    background-color: $background-dark;
+    margin: 0;
+    padding: 0;
+    overflow-x: clip;
 
-            @media (max-width : 390px) {
-                img {
-                    margin-top: 30%;
-                    width: 80%;
-                }
-            }
-        }
-    
-        main {
-            background-color: $background-dark;
-
-            #cardHolder {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-evenly;
-                align-items: center;
-                margin:0 12.5vw;
-                &>*{
-                    $parent-size: calc(100vw - 25vw);
-                    $percent-per-card: calc($parent-size / $amount-of-card-per-row);
-                    $percent-by-side: calc( $percent-per-card / 4);
-                    margin: 2.5vh $percent-by-side; // calcul pour définir le nombre d'élements par ligne
-                }
-
-                @media (max-width : 390px) {
-                    &>*{
-                        margin: 2.5vh 25%;
-                    }
-                }
-            }
-        }
+    cei-header {
+      width: 100vw;
+      position: sticky;
+      top: 0;
     }
+
+    #hero {
+      top: $header-height;
+      left: 0;
+      height: calc(100vh - $header-height);
+      width: 100%;
+      display: flex;
+      pointer-events: none;
+
+      img {
+        position: absolute;
+        margin: auto;
+        width: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.8);
+        top: 50vh;
+
+        &#logoTxt {
+            animation: rotation 440s infinite linear;
+            @keyframes rotation {
+                from {
+                  transform: translate(-50%, -50%) scale(1) rotate(0deg);
+                }
+                to {
+                  transform: translate(-50%, -50%) scale(1) rotate(359deg);
+                }
+              }
+        }
+      }
+
+      @media (max-width: 390px) {
+        img {
+          margin-top: 30%;
+          width: 80%;
+        }
+      }
+    }
+
+    main {
+      background-color: $background-dark;
+
+      #cardHolder {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0 12.5vw;
+        & > * {
+          $parent-size: calc(100vw - 25vw);
+          $percent-per-card: calc($parent-size / $amount-of-card-per-row);
+          $percent-by-side: calc($percent-per-card / 4);
+          margin: 2.5vh $percent-by-side; // calcul pour définir le nombre d'élements par ligne
+        }
+
+        @media (max-width: 390px) {
+          & > * {
+            margin: 2.5vh 25%;
+          }
+        }
+      }
+    }
+  }
 }
