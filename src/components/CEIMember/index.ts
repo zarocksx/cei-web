@@ -62,10 +62,6 @@ export class CEIMember extends LitElement {
         m_job: 'Digital engineering consultant',
       },
       {
-        m_name: 'Nathan Van Dyck',
-        m_job: 'Développeur web fullstack/front-end',
-      },
-      {
         m_name: 'Bryan Bartoloni',
         m_job: 'Développeur front end / UX designer',
       },

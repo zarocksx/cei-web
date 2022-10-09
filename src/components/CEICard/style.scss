@@ -13,6 +13,12 @@
   $tier-height: calc($card-height / 3);
   color: $text-color;
 
+  @media (max-width: 768px) {
+    max-width: unset;
+    width: 40vw;
+    height: 30vh;
+  }
+
   @media (max-width: 390px) {
     width: $mobile-card-width;
     max-width: $mobile-card-width;

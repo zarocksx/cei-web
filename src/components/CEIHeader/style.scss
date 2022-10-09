@@ -56,10 +56,16 @@
     }
   }
 
-  @media (max-width: 390px) {
+  @media (max-width: 500px) {
     a {
       font-size: 1em;
       margin: 0 0.25em;
+    }
+  }
+
+  @media (max-width: 315px) {
+    svg {
+      display: none;
     }
   }
 }

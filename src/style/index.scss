@@ -24,6 +24,10 @@ html {
       display: flex;
       pointer-events: none;
 
+      @media (max-width: 768px) {
+        height: calc(50vh - $header-height);
+      }
+
       svg {
         position: absolute;
         margin: auto;
@@ -31,7 +35,10 @@ html {
         left: 50%;
         transform: translate(-50%, -50%) scale(0.8);
         top: 50vh;
-        
+
+        @media (max-width: 768px) {
+          top: 25vh;
+        }
 
         &:not(#logoTxt)>path{
           stroke:#F8FC09;
@@ -89,6 +96,9 @@ html {
         justify-content: space-evenly;
         align-items: center;
         margin: 0 12.5vw;
+        @media (max-width: 768px) {
+          display: grid;
+        }
         & > * {
           $parent-size: calc(100vw - 25vw);
           $percent-per-card: calc($parent-size / $amount-of-card-per-row);
@@ -98,7 +108,7 @@ html {
 
         @media (max-width: 390px) {
           & > * {
-            margin: 2.5vh 25%;
+            margin: 2.5vh auto;
           }
         }
       }
