@@ -13,7 +13,7 @@ import{u as n,p as t,c as e,L as i,h as o}from"./index.js";var r=Object.definePr
       <div id="member">
         ${this.items.map((({m_job:n,m_name:t})=>o`
             <article>
-              <img src='./src/assets/pictures/${t}.jpg' />
+              <img src='https://raw.githubusercontent.com/zarocksx/cei-web/deploy/src/assets/pictures/${t}.jpg' />
               <div class='info'>
                 <h3>${t}</h3>
                 <p>${n}</p>
