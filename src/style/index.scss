@@ -24,15 +24,42 @@ html {
       display: flex;
       pointer-events: none;
 
-      img {
+      svg {
         position: absolute;
         margin: auto;
         width: 40%;
         left: 50%;
         transform: translate(-50%, -50%) scale(0.8);
         top: 50vh;
+        
+
+        &:not(#logoTxt)>path{
+          stroke:#F8FC09;
+          stroke-dasharray: 8338.7822265625;
+          stroke-dashoffset: 8338.7822265625;
+
+          animation: test 7s linear forwards;
+          @keyframes test {
+            0% {
+              fill: #f8fc0900;
+
+            }
+
+            60% {
+              fill: #f8fc0900;
+            }
+
+            99% {
+              stroke-dashoffset: 0;
+            }
+            to {
+              fill: #F8FC09;
+            }
+          }
+        }
 
         &#logoTxt {
+          fill: #F8FC09;
             animation: rotation 440s infinite linear;
             @keyframes rotation {
                 from {
