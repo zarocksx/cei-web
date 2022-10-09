@@ -91,7 +91,7 @@ export class CEIMember extends LitElement {
         ${this.items.map(
           ({ m_job, m_name }) => html`
             <article>
-              <img src='./src/assets/pictures/${m_name}.jpg' />
+              <img src='https://raw.githubusercontent.com/zarocksx/cei-web/deploy/src/assets/pictures/${m_name}.jpg' />
               <div class='info'>
                 <h3>${m_name}</h3>
                 <p>${m_job}</p>
