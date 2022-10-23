@@ -24,7 +24,7 @@ export class CEITimeLine extends LitElement {
     return html`
         <li class="event" data-date=${event.date}>
             <h3>${event.title}</h3>
-            <pre>${event.description}</pre>
+            <p>${event.description}</p>
         </li>
     `;
   }
