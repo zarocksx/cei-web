@@ -25,6 +25,11 @@
       "_index.js"
     ]
   },
+  "src/pages/article.html": {
+    "file": "cei-web.es4.js",
+    "src": "src/pages/article.html",
+    "isEntry": true
+  },
   "_index.js": {
     "file": "index.js"
   },
