@@ -74,4 +74,12 @@ mosaic.images = [
     alt: 'groupe de CEI 3',
     url: 'https://drive.google.com/uc?export=view&id=13wvQbmHQNsG6PVzDv_bfMljovlk-DCLo',
   },
+  {
+    alt: 'Les femmes du CDOP',
+    url: 'https://drive.google.com/uc?export=view&id=1JIyu0OAvcuclJgjgfWL9o04OTZ98sdkS',
+  },
+  {
+    alt: 'Les vieux prez\'',
+    url: 'https://drive.google.com/uc?export=view&id=1yT1i02aonSBit2M6Fxc0jpjv82BimnSG',
+  },
 ]
