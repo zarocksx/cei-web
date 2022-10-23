@@ -27,6 +27,9 @@
     cursor: pointer;
     font-size: 36px;
     outline: none;
+    @media (max-width: 390px) {
+      display: none
+    }
   }
 
   .hidden {
@@ -36,9 +39,14 @@
   #member {
     display: flex;
     flex: 1;
-    overflow: hidden;
+    overflow: scroll;
     position: relative;
     height: 500px;
+    @media (max-width: 390px) {
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
 
     &::after {
         background: linear-gradient(to right, $background-dark 0%,transparent 3%,transparent 97%,$background-dark 100%);
@@ -46,6 +54,9 @@
         position: absolute;
         height: 100%;
         width: 100%;
+        @media (max-width: 390px) {
+          display: none
+        }
       }
 
       article {
