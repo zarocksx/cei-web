@@ -17,7 +17,8 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         historique: resolve(__dirname, 'src/pages/historique.html'),
-        photos: resolve(__dirname, 'src/pages/photos.html')
+        photos: resolve(__dirname, 'src/pages/photos.html'),
+        article: resolve(__dirname, 'src/pages/article.html')
       },
     },
   },
